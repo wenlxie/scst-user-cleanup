@@ -1,0 +1,14 @@
+sys
+bt
+bt -f 4263
+bt 414363
+list -H ffffffffc1fd23a0
+rd -64 ffff8d6c8f33dd80 16
+kmem ffff8d6c8f33dd80
+rd -64 ffff8d6d8107f980 12
+kmem ffff8d6d8107f980
+rd -64 ffff8d6d90b3bc80 16
+kmem ffff8d6d90b3bc80
+rd -a ffff8daf894a3250 56
+rd -a ffff8db0cea440d0 56
+quit

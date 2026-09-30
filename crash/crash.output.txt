@@ -1,0 +1,174 @@
+      KERNEL: /home/centos/vmlinux  [TAINTED]
+    DUMPFILE: /home/centos/dump.202609291605  [PARTIAL DUMP]
+        CPUS: 104
+        DATE: Tue Sep 29 16:05:17 -07 2026
+      UPTIME: 02:19:12
+LOAD AVERAGE: 3.28, 3.44, 3.99
+       TASKS: 4851
+    NODENAME: xxxxxxxxxxx
+     RELEASE: 6.8.0-130-generic
+     VERSION: #130 SMP Tue Aug 25 18:27:14 UTC 2026
+     MACHINE: x86_64  (2100 Mhz)
+      MEMORY: 1023.7 GB
+       PANIC: "Kernel panic - not syncing: SCST panic: DeadLoop error occurred!"
+PID: 4263     TASK: ffff8dac18852f80  CPU/NUMA:   13/0    COMMAND: "scst_usr_cleanu"
+ #0 [ffffd2ae5e9cbc98] machine_kexec at ffffffffa26ba97f
+ #1 [ffffd2ae5e9cbd00] __crash_kexec at ffffffffa282da43
+ #2 [ffffd2ae5e9cbdc8] panic at ffffffffa2706282
+ #3 [ffffd2ae5e9cbe48] dev_user_cleanup_thread at ffffffffc20539f9 [scst_user]
+ #4 [ffffd2ae5e9cbee8] kthread at ffffffffa273c88a
+ #5 [ffffd2ae5e9cbf28] ret_from_fork at ffffffffa2669b47
+ #6 [ffffd2ae5e9cbf50] ret_from_fork_asm at ffffffffa26058bb
+PID: 4263     TASK: ffff8dac18852f80  CPU/NUMA:   13/0    COMMAND: "scst_usr_cleanu"
+ #0 [ffffd2ae5e9cbc98] machine_kexec at ffffffffa26ba97f
+    ffffd2ae5e9cbca0: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbcb0: 000001005f0e1000 ffff8debdf0e1000
+    ffffd2ae5e9cbcc0: 000001005f0e2000 0000000000000000
+    ffffd2ae5e9cbcd0: 328138b9bce0d100 ffffd2ae5e9cbd08
+    ffffd2ae5e9cbce0: 0000000000000000 0000000000000023
+    ffffd2ae5e9cbcf0: ffffffffa51cc160 ffffd2ae5e9cbdc0
+    ffffd2ae5e9cbd00: ffffffffa282da43
+ #1 [ffffd2ae5e9cbd00] __crash_kexec at ffffffffa282da43
+    ffffd2ae5e9cbd08: ffff8daf894a2e30 ffffffffa51cc160
+    ffffd2ae5e9cbd18: 0000000000000023 0000000000000000
+    ffffd2ae5e9cbd28: ffffd2ae5e9cbdc0 ffffd2ae5e9cbd08
+    ffffd2ae5e9cbd38: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbd48: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbd58: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbd68: 0000000000000001 0000000000000000
+    ffffd2ae5e9cbd78: ffffd2ae5e9cbd08 0000000000000000
+    ffffd2ae5e9cbd88: ffffffffa282d99e 0000000000000010
+    ffffd2ae5e9cbd98: 0000000000000046 ffffd2ae5e9cbd00
+    ffffd2ae5e9cbda8: 0000000000000018 328138b9bce0d100
+    ffffd2ae5e9cbdb8: 0000000000000024 ffffd2ae5e9cbe40
+    ffffd2ae5e9cbdc8: ffffffffa2706282
+ #2 [ffffd2ae5e9cbdc8] panic at ffffffffa2706282
+    ffffd2ae5e9cbdd0: 0000000000000008 ffffd2ae5e9cbe50
+    ffffd2ae5e9cbde0: ffffd2ae5e9cbdf0 328138b9bce0d100
+    ffffd2ae5e9cbdf0: ffffffffa3796a0d 0000000000000000
+    ffffd2ae5e9cbe00: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbe10: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbe20: ffff8daf894a2b80 0000000000000001
+    ffffd2ae5e9cbe30: 0000000000000001 ffff8daf894a3288
+    ffffd2ae5e9cbe40: ffffd2ae5e9cbee0 ffffffffc20539f9
+ #3 [ffffd2ae5e9cbe48] dev_user_cleanup_thread at ffffffffc20539f9 [scst_user]
+    ffffd2ae5e9cbe50: ffffd2ae5e9cbe88 fffffff500002711
+    ffffd2ae5e9cbe60: ffff8daca1db4b30 ffffffff00000002
+    ffffd2ae5e9cbe70: ffff8daf894a2b88 ffff8daf894a3288
+    ffffd2ae5e9cbe80: 0000000000000000 ffffd2ae5e9cbe88
+    ffffd2ae5e9cbe90: ffffd2ae5e9cbe88 ffffffffa278bfc0
+    ffffd2ae5e9cbea0: ffffd2ae5e9cbea0 ffffd2ae5e9cbea0
+    ffffd2ae5e9cbeb0: 328138b9bce0d100 ffff8d6c08efcb40
+    ffffd2ae5e9cbec0: ffffd2ae5c8df910 ffff8d6c6077c280
+    ffffd2ae5e9cbed0: ffff8dac18852f80 ffffffffc20536a0
+    ffffd2ae5e9cbee0: ffffd2ae5e9cbf20 ffffffffa273c88a
+ #4 [ffffd2ae5e9cbee8] kthread at ffffffffa273c88a
+    ffffd2ae5e9cbef0: 0000000000000000 ffffd2ae5e9cbf58
+    ffffd2ae5e9cbf00: ffffffffa273c7b0 ffff8d6c08efcb40
+    ffffd2ae5e9cbf10: 0000000000000000 0000000000000000
+    ffffd2ae5e9cbf20: ffffd2ae5e9cbf48 ffffffffa2669b47
+ #5 [ffffd2ae5e9cbf28] ret_from_fork at ffffffffa2669b47
+    ffffd2ae5e9cbf30: ffffffffa273c7b0 ffff8d6c08efcb40
+    ffffd2ae5e9cbf40: 0000000000000000 ffffd2ae5e9cbf59
+    ffffd2ae5e9cbf50: ffffffffa26058bb
+ #6 [ffffd2ae5e9cbf50] ret_from_fork_asm at ffffffffa26058bb
+PID: 414363   TASK: ffff8d2c26272f80  CPU/NUMA:    3/0    COMMAND: "scst_usr_releas"
+ #0 [ffffd2aeddba3cc8] __schedule at ffffffffa378de2d
+ #1 [ffffd2aeddba3d70] schedule at ffffffffa378e32c
+ #2 [ffffd2aeddba3d90] schedule_timeout at ffffffffa3794e0f
+ #3 [ffffd2aeddba3de8] msleep at ffffffffa2804fcd
+ #4 [ffffd2aeddba3e00] scst_acg_del_lun at ffffffffc21fb955 [scst]
+ #5 [ffffd2aeddba3e50] scst_unregister_virtual_device at ffffffffc2207394 [scst]
+ #6 [ffffd2aeddba3eb0] dev_user_exit_dev at ffffffffc2052b72 [scst_user]
+ #7 [ffffd2aeddba3ed0] __dev_user_release at ffffffffc2052c82 [scst_user]
+ #8 [ffffd2aeddba3ee8] kthread at ffffffffa273c88a
+ #9 [ffffd2aeddba3f28] ret_from_fork at ffffffffa2669b47
+#10 [ffffd2aeddba3f50] ret_from_fork_asm at ffffffffa26058bb
+ffff8dac5f8a3288
+ffff8daca1db4108
+ffff8dac5f8a39c8
+ffff8daca1db3288
+ffff8daca1db56c8
+ffff8daca1db6c88
+ffff8db0cea473c8
+ffff8daca1db6548
+ffff8daca1db1588
+ffff8daca1db2408
+ffff8daca1db4848
+ffff8dac19f1b9c8
+ffff8daca1db7b08
+ffff8daca1db2b48
+ffff8dac5f8a6548
+ffff8d6d235a3288
+ffff8d6d2e4f4f88
+ffff8d6d235a39c8
+ffff8d6d235a56c8
+ffff8db0ceb0e548
+ffff8db0cea44f88
+ffff8daca1db0e48
+ffff8db0cea44108
+ffff8db0cea43288
+ffff8dac5f8a56c8
+ffff8db0cea439c8
+ffff8db0cea42b48
+ffff8db0cea40708
+ffff8dac5f8a0e48
+ffff8dac5f8a6c88
+ffff8db0cea41cc8
+ffff8daf894a39c8
+ffff8db0cea45e08
+ffff8daca1db39c8
+ffff8daf894a4f88
+ffff8daca1db4f88
+ffff8daf894a4108
+ffff8d6c8f33dd80:  0000000000000000 ffff8daf894a2b80   .........+J.....
+ffff8d6c8f33dd90:  0000000000000003 ffff8d6c8f33dd80   ..........3.l...
+ffff8d6c8f33dda0:  0000002000000001 0000000000000020   .... ... .......
+ffff8d6c8f33ddb0:  000058f76cf2e000 ffff8d2c31436600   ...l.X...fC1,...
+ffff8d6c8f33ddc0:  0000000000000000 0000000700000008   ................
+ffff8d6c8f33ddd0:  dead000000000100 dead000000000122   ........".......
+ffff8d6c8f33dde0:  0000000000004b4f ffff8daf894a2f20   OK...... /J.....
+ffff8d6c8f33ddf0:  ffff8daf894a2f20 0000000000000070    /J.....p.......
+CACHE             OBJSIZE  ALLOCATED     TOTAL  SLABS  SSIZE  NAME
+ffff8d6c2f513a00      688        586     12834    279    32k  scst_user_cmd
+  SLAB              MEMORY            NODE  TOTAL  ALLOCATED  FREE
+  fffff4a3043cce00  ffff8d6c8f338000     2     46          1    45
+  FREE / [ALLOCATED]
+  [ffff8d6c8f33dd80]
+
+      PAGE         PHYSICAL      MAPPING       INDEX CNT FLAGS
+fffff4a3043ccf40 810f33d000 dead000000000400        0  0 97ffffc0000000
+ffff8d6d8107f980:  0000002000000005 00000001007ad5ee   .... .....z.....
+ffff8d6d8107f990:  dead000000000100 dead000000000122   ........".......
+ffff8d6d8107f9a0:  dead000000000100 dead000000000122   ........".......
+ffff8d6d8107f9b0:  ffff8db0b7ceb980 000010000000001f   ................
+ffff8d6d8107f9c0:  0000000000000020 ffff8d6c8f33dd80    .........3.l...
+ffff8d6d8107f9d0:  0000000000000000 ffff8d6d8107f9e0   ............m...
+CACHE             OBJSIZE  ALLOCATED     TOTAL  SLABS  SSIZE  NAME
+ffff8d6c070a4e00     1120        131      2072     74    32k  sgv-128K
+  SLAB              MEMORY            NODE  TOTAL  ALLOCATED  FREE
+  fffff4a308041e00  ffff8d6d81078000     2     28          3    25
+  FREE / [ALLOCATED]
+  [ffff8d6d8107f980]
+
+      PAGE         PHYSICAL      MAPPING       INDEX CNT FLAGS
+fffff4a308041fc0 820107f000 dead000000000400        0  0 97ffffc0000000
+ffff8d6d90b3bc80:  ffff8d7118b07900 ffff8db0cea43a00   .y..q....:......
+ffff8d6d90b3bc90:  0000000000000001 ffff8d6c8f33dd80   ..........3.l...
+ffff8d6d90b3bca0:  0000000000000001 0000000000000000   ................
+ffff8d6d90b3bcb0:  000058f76cf2e000 0000000000000000   ...l.X..........
+ffff8d6d90b3bcc0:  ffff8d6d8107f980 0000000300000009   ....m...........
+ffff8d6d90b3bcd0:  dead000000000100 dead000000000122   ........".......
+ffff8d6d90b3bce0:  000000000004f6aa ffff8db0cea43f50   ........P?......
+ffff8d6d90b3bcf0:  ffff8db0cea43f50 0000000000000070   P?......p.......
+CACHE             OBJSIZE  ALLOCATED     TOTAL  SLABS  SSIZE  NAME
+ffff8d6c2f513a00      688        586     12834    279    32k  scst_user_cmd
+  SLAB              MEMORY            NODE  TOTAL  ALLOCATED  FREE
+  fffff4a30842ce00  ffff8d6d90b38000     2     46         21    25
+  FREE / [ALLOCATED]
+  [ffff8d6d90b3bc80]
+
+      PAGE         PHYSICAL      MAPPING       INDEX CNT FLAGS
+fffff4a30842cec0 8210b3b000 dead000000000400        0  0 97ffffc0000000
+ffff8daf894a3250:  e1c9a786-eb-8af29c99-96fd-efb3-0198-cb958dd30766
+ffff8db0cea440d0:  e1c9a786-eb-8a084ab3-9fa9-c71e-01a0-5c233f6618b1
